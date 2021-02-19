@@ -1,0 +1,305 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body.runtime{
+	background-color:black;
+	background-image: url(../img/shadow-orb.png);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	width:100%;
+	height:100%;
+}
+body.runtime #revelation {
+	position:absolute;
+	width:40%;
+	left:25%;
+	color:black;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	height:200px;
+	top:200px;
+	text-align:center;
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+
+/* Manual Mode Styles */
+body.manual{
+	background-color:silver;
+}
+
+.manual form {
+ 	margin: 20px;
+}
+.manual form table {
+  width:600px;
+  text-align:center;
+}
+.manual th, .manual td {
+  padding:5px;
+}
+.manual th {
+  font-weight:bold;
+}
+.manual td input[type=button] {
+  width:30px;
+  font-size:.75em;
+}
+.manual input {
+	text-align: center;
+}
+
+.manual .stop {
+	color: red;
+	width: 400px;
+	margin-left:5em;
+}
+
+.manual .gauge {
+	position:relative;
+	height:10px;
+	background-color:black;
+	width: 208px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 5px;
+	padding:2px;
+	border-right:4px solid black;
+}
+
+.manual .mercury {
+	position:absolute;
+	height:10px;
+	background-color: rgb(59, 143, 20);
+	width: 50%;	
+}
+.manual .scale {
+	color:white;
+	position:absolute;
+	font-size:8px;
+	right:2px;
+}
+.good {
+  background-color:#0F0;
+}
+.warn {
+  background-color:#FC0;
+}
+.alert {
+  background-color:#F00;
+}
+
+.increment {}
+.decrement {}
+/* Sleep page */
+body.sleep{
+	background-color:black;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

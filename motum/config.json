@@ -1,0 +1,12 @@
+{
+  "http_port": 3000,
+  "oz_amp_scale": 1,
+  "oz_sample_speed": 1,
+  "oz_freq_scale": 0.001,
+  "serial_port_name": "/dev/ttyUSB0",
+  "system_interval": 10,
+  "x_max": 113,
+  "y_max": 7,
+  "z_max": 8,
+  "a_max": 288
+}

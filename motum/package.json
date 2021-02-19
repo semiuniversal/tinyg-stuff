@@ -1,0 +1,15 @@
+{
+  "name": "motum",
+  "version": "0.0.1",
+  "description": "Software to run installation by William Tremblay",
+  "main": "motum.js",
+  "dependencies": {
+    "express": "~4.8.0",
+    "oscillators": "~1.0.0",
+    "serialport": "^1.4.2",
+    "socket.io": "~1.0.6",
+    "timers-ext": "^0.1.0",
+    "wcttg": "~0.0.1",
+    "nconf": "~0.6.9"
+  }
+}
